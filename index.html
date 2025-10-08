@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Portfolio — Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <nav id="primary-nav" class="primary-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h1>Hi — I'm Mahinda, a Frontend Developer</h1>
+        <p>Building responsive, accessible, and delightful web experiences using HTML5, CSS3 and JavaScript.</p>
+        <a class="primary-cta" href="about.html">Learn more</a>
+    </section>
+
+    <section class="features">
+        <article>
+            <h2>Responsive Design</h2>
+            <p>Layouts that adapt from mobile to desktop using CSS Grid & Flexbox.</p>
+        </article>
+        <article>
+            <h2>Interactive JS</h2>
+            <p>Form validation, accessible navigation, and a lightweight image slider.</p>
+        </article>
+        <article>
+            <h2>Best Practices</h2>
+            <p>Organized files, semantic markup, and clean code.</p>
+        </article>
+    </section>
+
+    <section class="slider-section">
+        <h2>Project Gallery</h2>
+        <div class="slider" id="slider">
+            <button class="slider-btn prev" id="prev">◀</button>
+            <div class="slides">
+                <div class="slide"><img src="images/slide1.svg" alt="Project 1"></div>
+                <div class="slide"><img src="images/slide2.svg" alt="Project 2"></div>
+                <div class="slide"><img src="images/slide3.svg" alt="Project 3"></div>
+            </div>
+            <button class="slider-btn next" id="next">▶</button>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; <span id="year"></span> Mahinda — Built with HTML, CSS & JS.</p>
+        <p><a href="contact.html">Contact</a> • <a href="about.html">About</a></p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

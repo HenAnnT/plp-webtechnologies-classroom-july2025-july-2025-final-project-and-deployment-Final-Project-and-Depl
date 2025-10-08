@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
+        <button id="nav-toggle-3" class="nav-toggle">☰</button>
+        <nav id="primary-nav-3" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container narrow">
+    <section class="contact-card">
+        <h1>Contact Me</h1>
+        <form id="contact-form" novalidate>
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required minlength="2">
+
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6"></textarea>
+
+            <div class="form-row">
+                <button type="submit" class="primary-cta">Send</button>
+                <button type="reset" class="secondary-cta">Reset</button>
+            </div>
+            <div id="form-status" aria-live="polite"></div>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; <span id="year-3"></span> Mahinda — Built with HTML, CSS & JS.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
